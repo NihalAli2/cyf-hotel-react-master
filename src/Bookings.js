@@ -7,13 +7,14 @@ const Bookings = () => {
   const search = searchVal => {
     console.info("TO DO!", searchVal);
   };
-
+  console.log(FakeBookings)
   return (
     <div className="App-content">
       <div className="container">
         <Search search={search} />
-        {<SearchResults results={FakeBookings} />}
-        <FakeBookings />
+        <SearchResults results={FakeBookings} />
+      
+        
         
       </div>
     </div>
